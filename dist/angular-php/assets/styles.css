@@ -1,0 +1,150 @@
+/* You can add global styles to this file, and also import other style files */
+.pull-right
+{
+    float:right;
+}
+
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.div-parent {
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  padding-left: 50px;
+}
+
+
+table.mat-table {
+  border-spacing: 0;
+}
+
+td.mat-cell, td.mat-footer-cell, th.mat-header-cell {
+  padding: 10px !important;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+th.mat-cell {
+  padding: 10px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  font-weight: bold;
+}
+
+.mat-table {
+  background: #fff;
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+
+.mat-sort-header-stem {
+  background: currentColor;
+  height: 10px;
+  width: 2px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.mat-sort-header-arrow, .mat-sort-header-position-before .mat-sort-header-arrow {
+  margin: 0 0 0 6px;
+}
+
+.mat-sort-header-arrow {
+  height: 12px;
+  width: 12px;
+  min-width: 12px;
+  position: relative;
+  display: flex;
+  opacity: 0;
+}
+
+.mat-sort-header-arrow {
+  color: #757575;
+}
+
+.mat-sort-header-container {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+
+.search-box {
+  margin-bottom: 15px;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+  
+.et_pb_row_0 {
+  background-color: #4bc6b8;
+  border-radius: 30px 0 30px 30px;
+  overflow: hidden;
+  padding: 20px;
+}
+.et_pb_text_0.et_pb_text {
+  color: #FFFFFF!important;
+  font-family: 'Grenze Gotisch'!important;
+}
+.et_pb_text_align_center {
+  text-align: center;
+}
+
+.et_pb_cta_0.et_pb_promo {
+  background-color: #d16324;
+  border-radius: 25px 0 25px 25px;
+  overflow: hidden;
+  padding-top: 10px!important;
+  padding-right: 10px!important;
+  padding-bottom: 5px!important;
+  padding-left: 10px!important; 
+  color: #FFFFFF!important;  
+  font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;   
+  font-size: 16px;
+}
+
+.et_pb_text_1 {
+  font-family: 'Grenze Gotisch',display;
+  font-size: 40px;
+  line-height: 1em;
+  color: black;
+  text-shadow: 0em 0.1em 0.1em rgb(0 0 0 / 40%);
+}
+.et_pb_text_2 {
+  font-family: 'Grenze Gotisch',display;
+  font-weight: 300;
+  font-size:20px;
+  line-height: 1.8em;
+  color: black;
+}
+
+.et_pb_cta_1.et_pb_promo {
+  background-color: #25abd8;
+  border-radius: 20px 0 20px 20px;
+  overflow: hidden;
+  padding-top: 10px!important;
+  padding-right: 10px!important;
+  padding-bottom: 5px!important;
+  padding-left: 10px!important;
+  margin-top: -20px!important;
+  color: #FFFFFF!important;  
+  font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;   
+  font-size: 15px;
+}

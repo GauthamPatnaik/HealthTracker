@@ -1,0 +1,97 @@
+<div class="se-pre-con" *ngIf="isLoad"></div>
+<div class="kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid">
+    <div class="kt-portlet" style="padding:8%;">
+        <h3>Hi !!!<br>Welcome to BP & Pulse Tracker</h3>
+        <br>
+        <div class="kt-portlet__body kt-portlet__body--fit">
+            <form [formGroup]="registrationForm">
+                <div class="form-group row">
+                   
+                    <div class="col-lg-6 kt-margin-bottom-20-mobile">
+                        <div class="form-group">
+                            <label class="label-color">
+                                Name
+                                <span class="kt-font-danger"> *</span>
+                            </label>
+                                <select name="Name" class="form-control" formControlName="Name" required placeholder="Select Your Name">
+                                    <option value="null" disabled>--Select Your Name--</option>
+                                    <option value="V V RAO">V V RAO</option>
+                                    <option value="V SUDHA RANI">V SUDHA RANI</option>
+                                    <!-- <option *ngFor="let CaA of caassociationtype" value="{{CaA.Id}}">
+                                      {{CaA.AssocianType}}
+                                    </option> -->                                     
+                                  </select>
+                          </div>
+                    </div>                    
+              
+                    <div class="col-lg-6 kt-margin-bottom-20-mobile">
+                        <div class="form-group">
+                            <label class="label-color">
+                               SYS(mmHg)
+                                <span class="kt-font-danger"> *</span>
+                            </label>
+                            <input type="text" class="form-control" placeholder="SYS" formControlName="sys">                          
+                        </div>
+                    </div>  
+
+                    <div class="col-lg-6 kt-margin-bottom-20-mobile">
+                        <div class="form-group">
+                            <label class="label-color">
+                               DIA(mmHg)
+                                <span class="kt-font-danger"> *</span>
+                            </label>
+                            <input type="text" class="form-control" placeholder="DIA" formControlName="dia">                          
+                        </div>
+                    </div>  
+
+                    <div class="col-lg-6 kt-margin-bottom-20-mobile">
+                        <div class="form-group">
+                            <label class="label-color">
+                               PULSE(per/min)
+                                <span class="kt-font-danger"> *</span>
+                            </label>
+                            <input type="text" class="form-control" placeholder="PULSE" formControlName="pulse">                          
+                        </div>
+                    </div>                           
+                              
+                </div>              
+                <!--End::Portlet-->
+                <div class="form-group row">
+                    <div class="form-group col-md-11 kt-margin-bottom-20-mobile">
+                        <button type="button" class="btn btn-brand btn-elevate btn-icon-sm"            
+                           (click)="onSubmit()" [disabled]="!registrationForm.valid" style="float:right">
+                            Submit
+                        </button>
+                    </div>              
+                </div>              
+              </form> 
+              <div>
+                <button type="button" class="btn btn-brand btn-elevate btn-icon-sm"              
+                (click)="onLoadData()" style="float:right">
+                Check History
+             </button>
+             <table class="table table-hover" *ngIf="displayGrid">
+                <thead>
+                    <tr> 
+                      <th scope="col">Date</th>                    
+                      <th scope="col">Name</th>
+                      <th scope="col">Details</th>
+                      
+                    </tr>
+                  </thead>
+                  <tbody>                 
+              
+                <tr *ngFor="let item of getData">
+                   <td>{{item.IST}}</td>
+                   <td><b>{{item.Name}}</b></td>
+                   <td><b>
+                    BP: {{item.SYS}}/{{item.DIA}}<br>
+                    PULSE: {{item.PULSE}}</b> 
+                   </td>                   
+                </tr>
+            </tbody>
+             </table>
+            </div>
+        </div>
+    </div>
+</div>
